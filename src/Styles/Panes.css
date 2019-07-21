@@ -1,0 +1,202 @@
+/*-------------------------------------------*\
+   Panes.css
+
+   These are the styles for the layout that reside within the dashboard.
+ 
+   Index
+   - leftPane
+   - rightPane
+        |
+        |_ rightContainer
+   - propertiesPane
+\*-------------------------------------------*/
+
+
+/**
+ * leftPane
+ */
+
+.leftPane {
+  min-width: 150px;
+  background: mediumaquamarine;
+  padding: 1rem;
+
+}
+
+.leftPaneTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.leftPaneControl {
+  background: grey;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.leftPaneControl.is-active {
+  background: blue;
+}
+
+.leftPaneControlSort {
+  background: red;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.leftPaneControlSort.is-active-sort {
+  background: green;
+}
+
+
+#wcMenu {
+  display: none;
+}
+
+#wcMenu.is-active {
+  display: block;
+}
+
+#httpMenu {
+  display: none;
+}
+
+#httpMenu.is-active {
+  display: block;
+}
+
+/**
+ * rightPane
+ */
+
+.rightPane {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+
+
+/**
+ * rightContainer
+ */
+
+
+.rightContainer {
+  background: white;
+  border: 1px solid gray;
+}
+
+.containerTitle {
+  line-height: 40px;
+  background: lightgrey;
+}
+
+.containerDot {
+  display: inline-block;
+  margin: 0 0.5rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.containerDot:nth-child(1) {
+  background: #e74c3c;
+}
+
+.containerDot:nth-child(2) {
+  background: #f4a62a;
+}
+
+.containerDot:nth-child(3) {
+  background: #16a085;
+}
+
+/**
+ * propertiesPane
+ */
+
+.propertiesMenu {
+  min-width: 150px;
+  background: mediumaquamarine;
+  padding: 1rem;
+  display: none;
+}
+
+.propertiesMenu.is-active {
+  min-width: 150px;
+  background: mediumaquamarine;
+  padding: 1rem;
+  display: block;
+  height: 100vh;
+}
+
+.propertiesMenuTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.proprtyFormContainer {
+  margin: 0.7rem
+}
+
+.propertiesPaneDescriptor {
+  height: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 1rem;
+  text-align: center;
+  margin: 4px 2px;
+  height: 15vh;
+  background-color: darkcyan;
+}
+
+.propertyForm {
+  margin: 1rem;
+  align-content: center;
+  margin-bottom: 10;
+  justify-self: stretch;
+  top: 50%;
+  border: 0px;
+  display: table-cell;
+  position: relative;
+  height: 25vh;
+}
+
+.propertyFormButton {
+  /* Green */
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.propertyFormButton.connect {
+  background-color: blue;
+  /* Green */
+
+}
+
+.propertyFormButton.close {
+  background-color: red;
+  /* Green */
+
+}

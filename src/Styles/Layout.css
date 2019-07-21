@@ -1,0 +1,57 @@
+
+/*-------------------------------------------*\
+   Layout.css
+
+   These are the styles for the primary layout.
+ 
+   Index
+   - General
+   - App
+\*-------------------------------------------*/
+
+
+/**
+ * General
+ */
+
+html,
+body {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: #000000;
+  background: lightgray;
+}
+
+/**
+ * app
+ */
+
+.app {
+    display: flex;
+    flex-flow: column nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} 
+
+/**
+ * main
+ */
+
+main {
+    position: relative;
+    flex: 1 100%;
+    overflow: hidden;
+}
+
+/**
+ * dashWrapper
+ */
+
+.dashWrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+  }
+  

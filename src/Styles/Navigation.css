@@ -1,0 +1,50 @@
+
+/*-------------------------------------------*\
+   Navigation.css
+
+   These are the styles for the primary navigation 
+   bar located at the top of the application.
+ 
+   Index
+   - nav
+\*-------------------------------------------*/
+
+
+/**
+ * nav
+ */
+ 
+  
+nav {
+    background: #455a64;
+}
+  
+nav ul li {
+    display: inline-block;
+    padding: 0.5rem;
+}
+.navLink {
+      color: #ffffff;
+      text-decoration: none;
+      font-style: oblique;
+      font-weight: 900;
+      padding: 0.5rem 1rem;
+}
+.navLink:hover {
+        text-decoration: underline;
+}
+
+.toggleButton {
+      background-color: #ffffff;
+      color: black;
+      border-radius: 10px 100px / 120px;
+      border: solid 0.3em gold;
+      
+}
+
+.toggleButton.is-active {
+      background-color: #ffffff;
+      color: black;
+      border-bottom-color: rgb(170, 50, 220, .6);
+}
+
