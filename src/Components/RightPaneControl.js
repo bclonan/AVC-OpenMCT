@@ -28,9 +28,6 @@ let RightPaneControl = {
       
    const tableWrapper = document.getElementById('rightPanelWrapper');
        tableWrapper.innerHTML =  tableDataInstance.init()
-/*tableWrapper.addEventListener("click", () => {
-       tableDataInstance.addRow({id: "1", name : "two", value : "8888"})
-      })*/
 
    }
 
